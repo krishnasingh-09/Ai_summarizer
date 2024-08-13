@@ -80,11 +80,11 @@ const Demo = () => {
             onChange={(e) => setArticle({ ...article, url: e.target.value })}
             onKeyDown={handleKeyDown}
             required
-            className='url_input peer' // When you need to style an element based on the state of a sibling element, mark the sibling with the peer class, and use peer-* modifiers to style the target element
+            className='url_input peer' 
           />
           <button
             type='submit'
-            className='submit_btn peer-focus:border-gray-700 peer-focus:text-gray-700 '
+            className='submit_btn peer-focus:border-gray-700 peer-focus:text-gray-900 '
           >
             <p>↵</p>
           </button>
@@ -107,6 +107,10 @@ const Demo = () => {
               </div>
               <p className='flex-1 font-satoshi text-blue-700 font-medium text-sm truncate'>
                 {item.url}
+
+             
+
+
               </p>
             </div>
           ))}
